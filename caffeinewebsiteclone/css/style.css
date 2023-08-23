@@ -24,6 +24,8 @@ body {
   right: 0%;
   bottom: 0%;
   z-index: -1;
+
+  
   background-image: -webkit-gradient(
       linear,
       left top,
