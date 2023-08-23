@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  font-family: Hauora, sans-serif;
+  color: #66635f;
+  font-size: 18px;
+  line-height: 1.667em;
+  font-weight: 400;
+}
+
+.hero {
+
+  width: 100vw;
+  height: 180vh;
+
+
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: -1;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(14, 5, 54, 0.55)),
+      to(rgba(0, 0, 0, 0.55))
+    ),
+    url("/caffeinewebsiteclone/images/hero-bg.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("/caffeinewebsiteclone/images/hero-bg.jpg");
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+  background-attachment: scroll, fixed;
+}
+
+.header {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1px solid rgb(136, 136, 136);
+  padding: 10px 0px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2vw;
+  padding-top: 15px;
+  transition: transform 0.3s ease;
+}
+.nav-left:hover{
+  transform: translateY(-6px);
+}
+
+
+
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5vw;
+  padding-top: 10px;
+}
+
+.header .logo {
+}
+
+.header .nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .nav-ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 13px;
+  font-family: Alpino, sans-serif;
+  font-weight: 900px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transition: color 0.5s ease;
+  font-family: Alpino, sans-serif;
+}
+
+.nav-ul li a:hover {
+ color: #966f2c;
+}
+
+
+.h-btn {
+  color: black;
+  background: white;
+  border: 0px;
+  padding: 15px 25px;
+  margin-right: 40px;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  /* Combine both transitions in a single property */
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.h-btn:hover {
+  background-color: #966f2c;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.h-btn:active {
+  background-color: #4d3408;
+}
+
+
+
+.dropdown-ul{
+  background: rgb(23, 23, 23);
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem; 
+  top: 50px;
+  right: 20vw;
+  display: none;
+  padding: 50px;
+  border-top: 50px transparent solid;
+}
+
+.nav-right ul li:hover > .dropdown-uls,
+.nav-right ul li .dropdown-ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+}
+
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 13vw;
+  
+}
+
+.content img{
+  margin-bottom: 5vh;
+}
+
+.content h1{
+  color: white;
+  font-size: 60px;
+line-height: 1.136em;
+font-weight: 800;
+text-transform: uppercase;
+margin-bottom: 16px;
+text-align: center;
+margin-bottom: 5vh;
+
+
+}
+
+.content p{
+
+  color: white;
+  text-align: center;
+
+  margin-bottom: 8vh;
+
+}
+
+.content-btn{
+
+}
