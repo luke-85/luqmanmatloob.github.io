@@ -5,7 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="icon" type="image/svg" href="images/favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <title>Home - Caffeine X - Webflow Ecommerce website template</title>
 </head>
 
@@ -23,26 +27,27 @@
 
             <div class="nav-right">
 
-                <ul class="nav-ul">
+                <ul class="nav-ul" id="myLinks">
 
                     <li><a href="#"> HOME </a></li>
                     <li><a href="#"> ABOUT </a></li>
                     <li><a href="#"> SHOP </a></li>
 
-                    <li><a href="#"> PAGES </a>
+                    <li class="dropdown-parent"><a href="#"> PAGES ↓ </a>
 
                         <ul class="dropdown-ul">
                             <ul>
-                                <li></li><a href="#">more</a>
-                                <li></li><a href="#">more</a>
-                                <li></li><a href="#">more</a>
-                                <li></li><a href="#">more</a>
+                                <li></li><a href="#">HOME</a>
+                                <li></li><a href="#">ABOUT`</a>
+                                <li></li><a href="#">SALES</a>
+                               
                             </ul>
                             <ul>
-                                <li></li><a href="#">more</a>
-                                <li></li><a href="#">more</a>
-                                <li></li><a href="#">more</a>
-                                <li></li><a href="#">more</a>
+                                <li></li><a href="#">HOME</a>
+                                <li></li><a href="#">HOME</a>
+                                <li></li><a href="#">ABOUT`</a>
+                              
+                               
                             </ul>
 
                         </ul>
@@ -52,21 +57,31 @@
 
 
                     <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CART</a></li>
+
+
                 </ul>
 
 
 
 
+                <div class="cart">
+                    <li><a href="#">CART</a></li>
+                </div>
+
+
                 <!-- <a href="#"><img src="images/cart.svg" alt="" class="cart-jpg" /></a> -->
-                <button class="h-btn">OUR MENU</button>
+                <button class="h-btn" id="myLinkss">OUR MENU</button>
 
             </div>
+
 
 
         </header>
 
 
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
 
 
         <div class="content">
@@ -77,7 +92,7 @@
 
             <p>Potenti eget accumsan commodo vel pharetra purus eleifend malesuada sit <br> metus mauris nec scelerisque
                 ut viverra elementum facilisis tristique.</p>
-            <button class="content-btn h-btn" style="  padding: 25px 50px;"> explore out menu</button>
+            <button class="content-btn h-btn"> explore out menu</button>
         </div>
 
 
@@ -87,8 +102,20 @@
 
 
 
+    <script>
 
 
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+
+    </script>
 
 
 
